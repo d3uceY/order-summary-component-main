@@ -117,7 +117,7 @@
 .cancel-order{
     color: var(--Desaturated-blue);
     font-weight: 700;
-    background: white;
+    background: transparent;
     border: none;
     width: 100%;
 }
