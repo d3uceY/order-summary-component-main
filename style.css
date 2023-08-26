@@ -1,0 +1,136 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+.main-container{
+    background: var(--Pale-blue);
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.card{
+    overflow: hidden;
+    border-radius: 20px;
+    max-width: 400px;
+    background: white;
+}
+
+.img-container img{
+    width: 100%;
+}
+
+
+.description{
+    padding: 35px;
+}
+
+
+.write-up{
+    text-align: center;
+}
+
+.write-up h1{
+    color: var(--Dark-blue);
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.write-up p{
+    font-weight:500;
+    color: var(--Desaturated-blue);
+    margin-bottom: 20px;
+}
+
+.plan-container{
+    background: var(--Very-pale-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 35px;
+}
+
+.plan{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.plan-container a{
+    color: var(--Bright-blue);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.plan-container a:hover{
+    color: #776df1;
+    text-decoration: none;
+}
+
+.annual-plan h3{
+    color: var(--Dark-blue);
+    font-size: 16px;
+}
+
+.annual-plan p{
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+}
+
+.proceed{
+    color: var(--Very-pale-blue);
+    background: var(--Bright-blue);
+    font-weight: 500;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    color: var(--Pale-blue);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.proceed:hover{
+    background: #776df1;
+    cursor: pointer;
+}
+
+.cancel-order{
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+    background: white;
+    border: none;
+    width: 100%;
+}
+
+.cancel-order:hover{
+    cursor: pointer;
+    color: var(--Dark-blue);
+}
+
+
+@media screen and (max-width: 599px){
+    .main-container{
+        background: #d6e1ff url(/images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
