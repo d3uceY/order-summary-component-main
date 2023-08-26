@@ -132,5 +132,6 @@
         background: #d6e1ff url(/images/pattern-background-mobile.svg);
         background-repeat: no-repeat;
         background-size: cover;
+        padding: 15px;
     }
 }
